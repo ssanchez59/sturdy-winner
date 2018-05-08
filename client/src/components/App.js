@@ -1,8 +1,19 @@
 //React Router stuff
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+import Header from './Header';
 
 const App = () => {
-  return <div>ABET Uniandes</div>;
+  return (
+    <div>
+      <BrowserRouter>
+        <div>
+          <Header />
+        </div>
+      </BrowserRouter>
+    </div>
+  );
 };
 
 export default App;
